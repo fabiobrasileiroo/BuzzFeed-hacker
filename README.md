@@ -1,5 +1,7 @@
 # BuzzFeedHacker
 
+![Captura de tela de 2024-02-10 21-28-43](https://github.com/fabiobrasileiroo/BuzzFeed-hacker/assets/99563281/29366d06-2f66-4ccb-badd-1c1cf76595e7)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
 
 ## Development server
