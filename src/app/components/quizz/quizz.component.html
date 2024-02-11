@@ -1,0 +1,52 @@
+<!-- <div class="quizz-container">
+  <div class="quizz-logo">
+    <img src="../../../assets/imgs/logo-hacker.png" width="200px" alt="">
+    <h3>{{title}}</h3>
+  </div>
+  <div *ngIf="!finished" class="quizz-questions">
+    <h3>
+      <span class="cor">{{questionSelected.question}}</span>
+    </h3>
+  </div>
+  <div *ngIf="!finished" class="quizz-options">
+    <button style="display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden" *ngFor="let option of questionSelected.options;let i = index"
+      (click)="playerChoose(option.alias)" class="btn-option">
+      {{option.name}}
+    </button>
+  </div>
+  <div *ngIf="finished" class="quizz-results">
+    <h1>O seu resultado é:</h1>
+    <p>Resposta Selecionadas</p>
+  </div>
+</div> -->
+<div class="quizz-container" [@fadeInOut]>
+  <div class="quizz-logo">
+    <img src="../../../assets/imgs/logo-hacker.png" width="200px" alt="">
+    <h3 style="font-size: 1.5rem;margin-top: px;">{{title}}</h3>
+  </div>
+  <div *ngIf="!finished" class="quizz-questions">
+    <h3>
+      <span style="font-size: 1.2rem;" class="cor">{{questionSelected.question}}</span>
+    </h3>
+  </div>
+  <div *ngIf="!finished" class="quizz-options">
+    <button *ngFor="let option of questionSelected.options; let i = index"
+    (click)="playerChoose(option.alias)" class="btn-option" >
+      {{option.name}}
+    </button>
+  </div>
+  <div *ngIf="finished" class="quizz-results" [ngClass]="{'white-hat':answerSelected == 'Você muito provavelmente seria um hacker do bem (white hat)'}">
+    <h1 [ngClass]="{'white-hat-h1':answerSelected == 'Você muito provavelmente seria um hacker do bem (white hat)'}">O seu resultado é:</h1>
+    <p [ngClass]="{'white-hat-p':answerSelected == 'Você muito provavelmente seria um hacker do bem (white hat)'}">{{answerSelected}}</p>
+    <!-- <button (click)="teste()">teste</button> -->
+    <img *ngIf="answerSelected == 'Você muito provavelmente seria um hacker do mal (black hat)'" src="../../../assets/imgs/linuxBlackHat.png" alt="">
+    <img *ngIf="answerSelected == 'Você muito provavelmente seria um hacker do bem (white hat)'" src="../../../assets/imgs/linuxWhiteHat.png" alt="">
+    <!-- ruim a , bom b -->
+  </div>
+</div>

@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "hackermad1";
+  src: url(assets/fonts/mad_hacker/MadHacker.ttf) ;
+}
+@font-face {
+  font-family:"hackernormal" ;
+  src: url(assets/fonts/hacker/Hacker.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  color: white;
+}
+:root {
+  /* Color Theme Swatches in Hex (correção na sintaxe) */
+  --hacker-card-1: #F2D4C2;
+  --hacker-card-2: #BFBABE;
+  --hacker-card-3: #8C878C;
+  --hacker-card-4: #3E3E40;
+  --hacker-card-5: #0D0D0D;
+}
+body {
+  background-color: var(--hacker-card-5);
+}

@@ -1,0 +1,49 @@
+{
+  "title": "Você seria um hacker do bem ou do mal?",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qual habilidade você mais valoriza na sua jornada de hacking?",
+      "options": [
+        {"id": 1, "name": "Descobrir vulnerabilidades para corrigi-las", "alias": "B"},
+        {"id": 2, "name": "Explorar vulnerabilidades para benefício próprio", "alias": "A"}
+      ]
+    },
+    {
+      "id": 2,
+      "question": "O que te motiva a realizar um ataque cibernético?",
+      "options": [
+        {"id": 1, "name": "Obter informações confidenciais para benefício próprio", "alias": "A"},
+        {"id": 2, "name": "Ajudar a fortalecer a segurança online", "alias": "B"}
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Como você prefere lidar com uma vulnerabilidade descoberta?",
+      "options": [
+        {"id": 1, "name": "Reportá-la imediatamente para que seja corrigida", "alias": "B"},
+        {"id": 2, "name": "Explorá-la secretamente para ganho pessoal", "alias": "A"}
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Qual é a sua visão sobre a ética do hacking?",
+      "options": [
+        {"id": 1, "name": "Deve ser usado para proteger sistemas e dados", "alias": "B"},
+        {"id": 2, "name": "Deve ser usado para obter vantagens ilegais ou prejudicar outros", "alias": "A"}
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Como você se vê na comunidade hacker?",
+      "options": [
+        {"id": 1, "name": "Um agente do caos em busca de benefício próprio", "alias": "A"},
+        {"id": 2, "name": "Um defensor da segurança cibernética", "alias": "B"}
+      ]
+    }
+  ],
+  "results": {
+    "A": "Você muito provavelmente seria um hacker do mal (black hat)",
+    "B": "Você muito provavelmente seria um hacker do bem (white hat)"
+  }
+}
